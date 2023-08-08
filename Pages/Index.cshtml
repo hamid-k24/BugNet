@@ -10,10 +10,11 @@
     <table class="table">
         <thead>
             <tr>
-            <th>Id</th>
+                <th>Id</th>
                 <th>Name</th>
                 <th>Desc</th>
-            <th>Is Done</th>
+                <th>Is Done</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -24,6 +25,9 @@
                 <td>@bug.Name</td>
                 <td>@bug.Description</td>
                 <td>@bug.IsDone</td>
+                <td>
+                    <a asp-page="./edit" asp-route-id="@bug.Id" class="btn btn-primary">Edit</a>
+                </td>
            </tr>
         }
 
